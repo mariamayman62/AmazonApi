@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Amazon\ITI.ElectroDev.Models\ITI.ElectroDev.Models.csproj" />
+    <ProjectReference Include="..\..\Matiral_iTi     (Full Stack .Net)\Final_project\ITI.ElectroDev.Models\ITI.ElectroDev.Models.csproj" />
   </ItemGroup>
 
 </Project>
