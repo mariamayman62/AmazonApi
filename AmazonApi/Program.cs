@@ -1,5 +1,6 @@
 using ITI.ElectroDev.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -13,6 +14,9 @@ builder.Services.AddDbContext<Context>(options =>
     options.UseLazyLoadingProxies()
         .UseSqlServer(builder.Configuration.GetConnectionString("connectionKey")); 
 });
+builder.Services.AddIdentity<User, IdentityRole>
+           ().AddEntityFrameworkStores<Context>()
+           .AddDefaultTokenProviders();
 builder.Services.AddCors();
 builder.Services.AddControllers().AddNewtonsoftJson(options =>
 {
