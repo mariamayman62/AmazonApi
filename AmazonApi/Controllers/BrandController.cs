@@ -18,7 +18,7 @@ namespace AmazonApi.Controllers
         }
 
         [HttpGet]
-        public BrandViewModel GetAll()
+        public BrandViewModel Get()
         {
             var brands = dbcontext.Brands.ToList();
             return new BrandViewModel()

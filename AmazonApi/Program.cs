@@ -10,11 +10,17 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 builder.Services.AddDbContext<Context>(options =>
 {
+
     options.UseLazyLoadingProxies()
-        .UseSqlServer(builder.Configuration.GetConnectionString("connectionKey")); ;
+        .UseSqlServer(builder.Configuration.GetConnectionString("connectionKey")); 
 });
 builder.Services.AddCors();
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddNewtonsoftJson(options =>
+{
+    options.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented;
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+});
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
