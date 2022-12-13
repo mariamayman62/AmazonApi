@@ -25,7 +25,7 @@ namespace AmazonApi.Controllers
             {
                 Success = true,
                 Message = " List Of Brands",
-                Data = new { Brand = brands }
+                Data = new { Brands = brands }
             };
         }
 
@@ -42,7 +42,7 @@ namespace AmazonApi.Controllers
                     Success = true,
                     Data = new
                     {
-                        Brand = brands,
+                        Brand = brands
                          
                     }
                 };

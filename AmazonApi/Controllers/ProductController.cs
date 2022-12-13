@@ -34,7 +34,7 @@ namespace AmazonApi.Controllers
             {
                 Success = true,
                 Message = "",
-                Data = new { Products = products }
+                Data = new { Product = products }
             };
 
 
