@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "OjqRHSDXixAAdvmbsxaXAajowktY7QPlTL0O0LZ1w4ZOgm3tjrpKeQHVx04I9b6G/+wizvUSsUncloYt1Fq8/Q==",
+  "dgSpecHash": "HS/nc6zcKnKuwrOXxcXa6UosN2WeCk8rKLM+Flr7CXtxmeNBBayCSfA7t5CcQQMZjLy2MbHX7Zx6O/NMJHBaRg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Mariam Ayman\\Desktop\\AmazonApiFinal\\AmazonApi\\AmazonApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mariam Ayman\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\Mariam Ayman\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\Mariam Ayman\\.nuget\\packages\\jetbrains.annotations\\2022.1.0\\jetbrains.annotations.2022.1.0.nupkg.sha512",
     "C:\\Users\\Mariam Ayman\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.0\\microsoft.aspnetcore.authentication.jwtbearer.6.0.0.nupkg.sha512",
     "C:\\Users\\Mariam Ayman\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.0\\microsoft.aspnetcore.cryptography.internal.6.0.0.nupkg.sha512",
     "C:\\Users\\Mariam Ayman\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.0\\microsoft.aspnetcore.cryptography.keyderivation.6.0.0.nupkg.sha512",
@@ -155,9 +154,7 @@
     "C:\\Users\\Mariam Ayman\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
     "C:\\Users\\Mariam Ayman\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Mariam Ayman\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Mariam Ayman\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Mariam Ayman\\.nuget\\packages\\x.pagedlist\\8.4.3\\x.pagedlist.8.4.3.nupkg.sha512",
-    "C:\\Users\\Mariam Ayman\\.nuget\\packages\\x.pagedlist.mvc.core\\8.4.3\\x.pagedlist.mvc.core.8.4.3.nupkg.sha512"
+    "C:\\Users\\Mariam Ayman\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -6,7 +6,7 @@ namespace ITI.ElectroDev.Presentation
     public class LoginModel
     {
         [Required]
-        [Display(Name = "UserName")]
+        [Display(Name = "Email")]
         public string UserName { get; set; }
         [Required]
         [MinLength(3)]
