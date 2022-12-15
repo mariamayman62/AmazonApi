@@ -1,11 +1,16 @@
 ﻿using ITI.ElectroDev.Models;
 using ITI.Library.Presentation.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json.Linq;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 
 namespace AmazonApi.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+   // [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class ProductController : Controller
     {
         private Context db;
@@ -39,5 +44,13 @@ namespace AmazonApi.Controllers
 
 
         }
+        [HttpGet]
+        public string getBrandNameByItemName(string itemName)
+        {
+            string brandName = db.Product.Where(i => i.Name == itemName).Select(c => c.Brand.Name).FirstOrDefault();
+            return brandName;
+        }
+
+
     }
 }

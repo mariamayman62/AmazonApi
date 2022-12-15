@@ -12,7 +12,7 @@ namespace AmazonApi.Controllers
 {
     [ApiController]
     //[Route("[controller]")]
-    [Route("api/[controller]/[action]")]
+    [Route("[controller]/[action]")]
     public class UserController : ControllerBase
     {
         Context c;

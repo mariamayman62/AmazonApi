@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Final Project -Dashboard- ITI\ITI.ElectroDev.Models\ITI.ElectroDev.Models.csproj" />
+    <ProjectReference Include="..\..\DashBoard\ITI.ElectroDev.Models\ITI.ElectroDev.Models.csproj" />
   </ItemGroup>
 
 </Project>
