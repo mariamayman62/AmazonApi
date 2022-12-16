@@ -1,11 +1,17 @@
 ﻿using ITI.ElectroDev.Models;
+using ITI.ElectroDev.Presentation;
 using ITI.Library.Presentation.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json.Linq;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 
 namespace AmazonApi.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+   // [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class ProductController : Controller
     {
         private Context db;
@@ -18,11 +24,14 @@ namespace AmazonApi.Controllers
         public ResultViewModel Get()
         {
             var products = db.Product.ToList();
+           
             return new ResultViewModel()
             {
                 Success = true,
                 Message = "Products List",
-                Data = new { Products = products }
+                Data = new { 
+                    products=products
+                }
             };
 
         }
@@ -30,13 +39,63 @@ namespace AmazonApi.Controllers
         public ResultViewModel Get(int id)
         {
             var products = db.Product.FirstOrDefault(i => i.Id == id);
+            var brandName = db.Product.Where(i => i.Name == products.Name).Select(c => c.Brand.Name).FirstOrDefault();
+            var catName = db.Product.Where(i => i.Name == products.Name).Select(c => c.Brand.Category.Name).FirstOrDefault();
+
             return new ResultViewModel()
             {
                 Success = true,
                 Message = "",
-                Data = new { Product = products }
+                Data = new {
+                    categoryName = catName,
+                    brandName = brandName,
+                    Product = products
+                
+                }
             };
 
+
+        }
+
+        [HttpGet]
+        public ResultViewModel getProductOffer(int num)
+        {
+            List<Product> itemList = new List<Product>();
+            var q = db.Product.Where(p => p.Price <= num);
+            foreach (var item in q)
+            {
+                itemList.Add(item);
+            }
+            return new ResultViewModel()
+            {
+                Success = true,
+                Message = "Products List",
+                Data = new
+                {
+                    productsOffer = itemList
+                }
+            };
+
+        }
+
+        [HttpGet]
+        public ResultViewModel getProductBestSeller(int num)
+        {
+            List<Product> itemList = new List<Product>();
+            var q = db.Product.Where(p => p.Quantity <= num);
+            foreach (var item in q)
+            {
+                itemList.Add(item);
+            }
+            return new ResultViewModel()
+            {
+                Success = true,
+                Message = "Products List",
+                Data = new
+                {
+                    productsOffer = itemList
+                }
+            };
 
         }
     }
