@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using ITI.ElectroDev.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace ITI.ElectroDev.Presentation
 {
@@ -13,4 +14,6 @@ namespace ITI.ElectroDev.Presentation
         [Display(Name="Category")]
         public int CategoryId { get; set; }
     }
+
+   
 }
