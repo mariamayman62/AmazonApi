@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "I:\\ItI\\iti 2022\\Final Project Amazon-API\\AmazonApi\\AmazonApi.csproj": {}
+    "F:\\ITI3Months\\Projects\\AmazonApi\\AmazonApi\\AmazonApi.csproj": {}
   },
   "projects": {
-    "I:\\ItI\\iti 2022\\Final Project -Dashboard- ITI\\ITI.ElectroDev.Models\\ITI.ElectroDev.Models.csproj": {
+    "F:\\ITI3Months\\ASP.NET\\ElectroDev\\ITI.ElectroDev.Models\\ITI.ElectroDev.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "I:\\ItI\\iti 2022\\Final Project -Dashboard- ITI\\ITI.ElectroDev.Models\\ITI.ElectroDev.Models.csproj",
+        "projectUniqueName": "F:\\ITI3Months\\ASP.NET\\ElectroDev\\ITI.ElectroDev.Models\\ITI.ElectroDev.Models.csproj",
         "projectName": "ITI.ElectroDev.Models",
-        "projectPath": "I:\\ItI\\iti 2022\\Final Project -Dashboard- ITI\\ITI.ElectroDev.Models\\ITI.ElectroDev.Models.csproj",
-        "packagesPath": "C:\\Users\\A\\.nuget\\packages\\",
-        "outputPath": "I:\\ItI\\iti 2022\\Final Project -Dashboard- ITI\\ITI.ElectroDev.Models\\obj\\",
+        "projectPath": "F:\\ITI3Months\\ASP.NET\\ElectroDev\\ITI.ElectroDev.Models\\ITI.ElectroDev.Models.csproj",
+        "packagesPath": "C:\\Users\\Khalaf\\.nuget\\packages\\",
+        "outputPath": "F:\\ITI3Months\\ASP.NET\\ElectroDev\\ITI.ElectroDev.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\A\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Khalaf\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,17 +97,17 @@
         }
       }
     },
-    "I:\\ItI\\iti 2022\\Final Project Amazon-API\\AmazonApi\\AmazonApi.csproj": {
+    "F:\\ITI3Months\\Projects\\AmazonApi\\AmazonApi\\AmazonApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "I:\\ItI\\iti 2022\\Final Project Amazon-API\\AmazonApi\\AmazonApi.csproj",
+        "projectUniqueName": "F:\\ITI3Months\\Projects\\AmazonApi\\AmazonApi\\AmazonApi.csproj",
         "projectName": "AmazonApi",
-        "projectPath": "I:\\ItI\\iti 2022\\Final Project Amazon-API\\AmazonApi\\AmazonApi.csproj",
-        "packagesPath": "C:\\Users\\A\\.nuget\\packages\\",
-        "outputPath": "I:\\ItI\\iti 2022\\Final Project Amazon-API\\AmazonApi\\obj\\",
+        "projectPath": "F:\\ITI3Months\\Projects\\AmazonApi\\AmazonApi\\AmazonApi.csproj",
+        "packagesPath": "C:\\Users\\Khalaf\\.nuget\\packages\\",
+        "outputPath": "F:\\ITI3Months\\Projects\\AmazonApi\\AmazonApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\A\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Khalaf\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -121,8 +121,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "I:\\ItI\\iti 2022\\Final Project -Dashboard- ITI\\ITI.ElectroDev.Models\\ITI.ElectroDev.Models.csproj": {
-                "projectPath": "I:\\ItI\\iti 2022\\Final Project -Dashboard- ITI\\ITI.ElectroDev.Models\\ITI.ElectroDev.Models.csproj"
+              "F:\\ITI3Months\\ASP.NET\\ElectroDev\\ITI.ElectroDev.Models\\ITI.ElectroDev.Models.csproj": {
+                "projectPath": "F:\\ITI3Months\\ASP.NET\\ElectroDev\\ITI.ElectroDev.Models\\ITI.ElectroDev.Models.csproj"
               }
             }
           }
