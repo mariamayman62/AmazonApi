@@ -58,10 +58,11 @@ namespace AmazonApi.Controllers
         }
 
         [HttpGet]
-        public ResultViewModel getProductOffer(int num)
+        public ResultViewModel getProductOffer()
         {
             List<Product> itemList = new List<Product>();
-            var q = db.Product.Where(p => p.Price <= num);
+
+            var q = db.Product.Where(p => p.Discount != 0);
             foreach (var item in q)
             {
                 itemList.Add(item);
