@@ -98,5 +98,22 @@ namespace AmazonApi.Controllers
             };
 
         }
+
+        [HttpGet]
+        public ResultViewModel Search(string term)
+        {
+            var resulte = db.Product.Where(p => p.Name.Contains(term) || p.Description.Contains(term)).ToList();
+
+            return new ResultViewModel()
+            {
+                Success = true,
+                Message = "Products List",
+                Data = new
+                {
+                    FilterdProducts = resulte,
+                }
+            };
+        }
+
     }
 }
