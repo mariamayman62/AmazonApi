@@ -58,10 +58,11 @@ namespace AmazonApi.Controllers
         }
 
         [HttpGet]
-        public ResultViewModel getProductOffer(int num)
+        public ResultViewModel getProductOffer()
         {
             List<Product> itemList = new List<Product>();
-            var q = db.Product.Where(p => p.Price <= num);
+
+            var q = db.Product.Where(p => p.Discount != 0);
             foreach (var item in q)
             {
                 itemList.Add(item);
@@ -77,16 +78,36 @@ namespace AmazonApi.Controllers
             };
 
         }
-
         [HttpGet]
-        public ResultViewModel getProductBestSeller(int num)
+        public ResultViewModel getProductBestSeller()
         {
             List<Product> itemList = new List<Product>();
-            var q = db.Product.Where(p => p.Quantity <= num);
-            foreach (var item in q)
+
+
+            //var q = db.Product.Where(p => p.Quantity <= num);
+            //  itemList = db.Product.OrderByDescending(x => x.OrderItems.Select(i=>i.ProductId).Count().Take(1).ToList();
+            //foreach (var item in q)
+            //{
+            //    itemList.Add(item);
+            //}
+            itemList = db.Product.OrderByDescending(info => info.OrderItems.Select(i => new { i.ProductId, i.Quantity }).Sum(i => i.Quantity)).Take(1).ToList();
+            return new ResultViewModel()
             {
-                itemList.Add(item);
-            }
+                Success = true,
+                Message = "Products List",
+                Data = new
+                {
+                    productsOffer = itemList
+                }
+            };
+
+        }
+
+        [HttpGet]
+        public ResultViewModel getProductMostPopular()
+        {
+            List<Product> itemList = new List<Product>();
+            itemList = db.Product.OrderByDescending(x => x.OrderItems.Select(i=>i.ProductId).Count()).Take(6).ToList();
             return new ResultViewModel()
             {
                 Success = true,
