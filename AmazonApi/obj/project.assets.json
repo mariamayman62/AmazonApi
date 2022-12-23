@@ -8454,8 +8454,8 @@
     },
     "ITI.ElectroDev.Models/1.0.0": {
       "type": "project",
-      "path": "../../Final Project -Dashboard- ITI/ITI.ElectroDev.Models/ITI.ElectroDev.Models.csproj",
-      "msbuildProject": "../../Final Project -Dashboard- ITI/ITI.ElectroDev.Models/ITI.ElectroDev.Models.csproj"
+      "path": "../../FinalDashboard/ITI.ElectroDev.Models/ITI.ElectroDev.Models.csproj",
+      "msbuildProject": "../../FinalDashboard/ITI.ElectroDev.Models/ITI.ElectroDev.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8473,19 +8473,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\A\\.nuget\\packages\\": {}
+    "C:\\Users\\Mariam Ayman\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "I:\\ItI\\iti 2022\\Final Project Amazon-API\\AmazonApi\\AmazonApi.csproj",
+      "projectUniqueName": "C:\\Users\\Mariam Ayman\\Desktop\\FinalApi\\AmazonApi\\AmazonApi.csproj",
       "projectName": "AmazonApi",
-      "projectPath": "I:\\ItI\\iti 2022\\Final Project Amazon-API\\AmazonApi\\AmazonApi.csproj",
-      "packagesPath": "C:\\Users\\A\\.nuget\\packages\\",
-      "outputPath": "I:\\ItI\\iti 2022\\Final Project Amazon-API\\AmazonApi\\obj\\",
+      "projectPath": "C:\\Users\\Mariam Ayman\\Desktop\\FinalApi\\AmazonApi\\AmazonApi.csproj",
+      "packagesPath": "C:\\Users\\Mariam Ayman\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mariam Ayman\\Desktop\\FinalApi\\AmazonApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\A\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mariam Ayman\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8499,8 +8499,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "I:\\ItI\\iti 2022\\Final Project -Dashboard- ITI\\ITI.ElectroDev.Models\\ITI.ElectroDev.Models.csproj": {
-              "projectPath": "I:\\ItI\\iti 2022\\Final Project -Dashboard- ITI\\ITI.ElectroDev.Models\\ITI.ElectroDev.Models.csproj"
+            "C:\\Users\\Mariam Ayman\\Desktop\\FinalDashboard\\ITI.ElectroDev.Models\\ITI.ElectroDev.Models.csproj": {
+              "projectPath": "C:\\Users\\Mariam Ayman\\Desktop\\FinalDashboard\\ITI.ElectroDev.Models\\ITI.ElectroDev.Models.csproj"
             }
           }
         }

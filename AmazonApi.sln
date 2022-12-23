@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazonApi", "AmazonApi\AmazonApi.csproj", "{7C1CBCF6-1B81-4242-9E28-C8945E6D09F8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITI.ElectroDev.Models", "..\Final Project -Dashboard- ITI\ITI.ElectroDev.Models\ITI.ElectroDev.Models.csproj", "{2696CF5E-1564-404C-91A8-89F7E08AE43F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITI.ElectroDev.Models", "..\FinalDashboard\ITI.ElectroDev.Models\ITI.ElectroDev.Models.csproj", "{EFDCFBC8-0C96-4BC0-B25A-A06FB64460A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{7C1CBCF6-1B81-4242-9E28-C8945E6D09F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C1CBCF6-1B81-4242-9E28-C8945E6D09F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C1CBCF6-1B81-4242-9E28-C8945E6D09F8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2696CF5E-1564-404C-91A8-89F7E08AE43F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2696CF5E-1564-404C-91A8-89F7E08AE43F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2696CF5E-1564-404C-91A8-89F7E08AE43F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2696CF5E-1564-404C-91A8-89F7E08AE43F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFDCFBC8-0C96-4BC0-B25A-A06FB64460A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFDCFBC8-0C96-4BC0-B25A-A06FB64460A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFDCFBC8-0C96-4BC0-B25A-A06FB64460A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFDCFBC8-0C96-4BC0-B25A-A06FB64460A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

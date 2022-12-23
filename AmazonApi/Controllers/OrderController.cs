@@ -25,7 +25,7 @@ namespace AmazonApi.Controllers
         {
 
             ResultViewModel myModel = new ResultViewModel();
-           User user = db.Users.FirstOrDefault(i => i.Id == obj.UserId);
+            User user = db.Users.FirstOrDefault(i => i.Id == obj.UserId);
             if (ModelState.IsValid == false)
             {
                 myModel.Success = false;
@@ -35,26 +35,30 @@ namespace AmazonApi.Controllers
             }
             else
             {
+                var product1 = db.Product.FirstOrDefault(i => i.Id == obj.orderItems.ProductId);
                 var order = new OrderDetails
                 {
                     CreatedAt = DateTime.Now,
                     UserId = user.Id,
                     PaymentMethod = obj.PaymentMethod,
                     Address = obj.Address,
+                    TotalPrice = obj.TotalPrice,
                     Street = obj.Street,
                     Status = "Delivered"
+                    
                 };
 
                 db.OrderDetails.Add(order);
                 db.SaveChanges();
-                db.OrderItems.Add(new OrderItems
+                var order_Item = new OrderItems
                 {
-                    OrderId = order.Id ,
-                    ProductId  = obj.orderItems.ProductId ,
-                    Quantity = obj.orderItems.Quantity ,
+                    OrderId = order.Id,
+                    ProductId = obj.orderItems.ProductId,
+                    Quantity = obj.orderItems.Quantity,
                     Price = obj.orderItems.Price
-                });
-
+                };
+                db.OrderItems.Add(order_Item);
+                product1.Quantity = product1.Quantity - order_Item.Quantity;
                 db.SaveChanges();
                 myModel.Success = true;
                 myModel.Message = "successful Order";
