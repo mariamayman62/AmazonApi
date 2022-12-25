@@ -21,9 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="ITI.ElectroDev.Models">
-      <HintPath>..\..\Final Project -Dashboard- ITI\ITI.ElectroDev.Models\bin\Debug\net6.0\ITI.ElectroDev.Models.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\..\Final Project -Dashboard- ITI\ITI.ElectroDev.Models\ITI.ElectroDev.Models.csproj" />
   </ItemGroup>
 
 </Project>
